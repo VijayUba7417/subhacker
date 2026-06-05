@@ -1,0 +1,47 @@
+# SubHacker scan output — never commit real scan data
+subhacker_scans/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# API keys — NEVER commit
+config.ini
+secrets.txt
+*.key
+api_keys.txt
+.secrets
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Log exports
+*.log
+subhacker_log_*.txt
+scan_log_*.txt
+
+# Temp
+*.tmp
+*.bak
