@@ -37,6 +37,17 @@ VERSION = "1.0"
 SDIR    = Path("subhacker_scans")
 SDIR.mkdir(exist_ok=True)
 
+BANNER = r"""
+  ____        _     _   _            _
+ / ___| _   _| |__ | | | | __ _  ___| | _____ _ __
+ \___ \| | | | '_ \| |_| |/ _` |/ __| |/ / _ \ '__|
+  ___) | |_| | |_) |  _  | (_| | (__|   <  __/ |
+ |____/ \__,_|_.__/|_| |_|\__,_|\___|_|\_\___|_|
+
+           Advanced Subdomain Takeover Scanner
+                      -- Vijay Uba
+"""
+
 UA = "Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0"
 
 # ── Colour palette ────────────────────────────────────────────────────────────
@@ -2063,6 +2074,11 @@ class App:
 # ══════════════════════════════════════════════════════════════════════════════
 
 def main():
+    # Print banner
+    print(BANNER)
+    print(f"  {TOOL} v{VERSION}  |  Subdomain Takeover & Attack Surface Scanner")
+    print(f"  github.com/YOUR_USERNAME/subhacker\n")
+
     # WSL2 display check
     if sys.platform.startswith("linux") and not os.environ.get("DISPLAY"):
         print("\n[!] No DISPLAY variable set.")
