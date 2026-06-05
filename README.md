@@ -13,7 +13,7 @@
 <br/>
 
 **SubHacker** is a professional GUI subdomain takeover scanner with a 5-phase attack surface discovery engine.  
-It combines passive OSINT, active DNS recon, HTTP probing, extended analysis, and takeover fingerprinting — all in one dark-themed desktop application.
+It combines passive OSINT, active DNS recon, HTTP probing, extended analysis, and takeover fingerprinting - all in one dark-themed desktop application.
 
 <br/>
 
@@ -103,18 +103,18 @@ Phase 5 ──► Takeover Analysis      CNAME/NS/MX dangling with 30+ service f
 
 ## 🖥️ GUI Features
 
-- **3-tab interface** — Takeover Findings / Live Hosts / Scan Log
-- **Live stats bar** — Subdomains / Live Hosts / Vulnerable / Potential / Analyzed
-- **Real-time search** — filter findings by any text as you type
-- **Status filter** — All / Vulnerable / Potential radio buttons
-- **Right-click menu** — Copy subdomain, CNAME, full finding; Open in browser
-- **Click-to-detail** — full NS, MX, WAF, tech, ports, CORS, dirs on one click
-- **Scan history** — double-click any past scan in the list to reload results
-- **Open Folder** — open scan output directory with one click
-- **Color-coded phases** — status indicator changes per scan phase
-- **Scan timer** — elapsed time shown on completion
-- **Summary popup** — stats when scan finishes
-- **Export** — JSON / TXT / CSV / Subdomain list
+- **3-tab interface** - Takeover Findings / Live Hosts / Scan Log
+- **Live stats bar** - Subdomains / Live Hosts / Vulnerable / Potential / Analyzed
+- **Real-time search** - filter findings by any text as you type
+- **Status filter** - All / Vulnerable / Potential radio buttons
+- **Right-click menu** - Copy subdomain, CNAME, full finding; Open in browser
+- **Click-to-detail** - full NS, MX, WAF, tech, ports, CORS, dirs on one click
+- **Scan history** - double-click any past scan in the list to reload results
+- **Open Folder** - open scan output directory with one click
+- **Color-coded phases** - status indicator changes per scan phase
+- **Scan timer** - elapsed time shown on completion
+- **Summary popup** - stats when scan finishes
+- **Export** - JSON / TXT / CSV / Subdomain list
 
 ---
 
@@ -134,18 +134,18 @@ Phase 5 ──► Takeover Analysis      CNAME/NS/MX dangling with 30+ service f
 
 ## ⚙️ Installation
 
-### Step 1 — Clone the repository
+### Step 1 - Clone the repository
 ```bash
 git clone https://github.com/YOUR_USERNAME/subhacker.git
 cd subhacker
 ```
 
-### Step 2 — Install Python dependencies
+### Step 2 - Install Python dependencies
 ```bash
 pip3 install -r requirements.txt
 ```
 
-### Step 3 — Install Go tools *(optional — tool works without them)*
+### Step 3 - Install Go tools *(optional - tool works without them)*
 ```bash
 go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
 go install github.com/tomnomnom/assetfinder@latest
@@ -157,14 +157,14 @@ echo 'export PATH=$PATH:~/go/bin' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-### Step 4 — WSL2 display setup *(skip on native Kali Linux desktop)*
+### Step 4 - WSL2 display setup *(skip on native Kali Linux desktop)*
 ```bash
 export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
 echo 'export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '"'"'{print $2}'"'"'):0' >> ~/.bashrc
 source ~/.bashrc
 ```
 
-### Step 5 — Run
+### Step 5 - Run
 ```bash
 python3 subhacker.py
 ```
@@ -229,7 +229,7 @@ urllib3     >= 2.0.0
 tkinter     (included in Python standard library)
 ```
 
-**Optional Go tools** (auto-detected — tool runs without them):
+**Optional Go tools** (auto-detected - tool runs without them):
 - [subfinder](https://github.com/projectdiscovery/subfinder)
 - [assetfinder](https://github.com/tomnomnom/assetfinder)
 - [amass](https://github.com/owasp-amass/amass)
@@ -239,15 +239,15 @@ tkinter     (included in Python standard library)
 
 ## 🔗 References
 
-- [OWASP WSTG — Subdomain Takeover](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/10-Test_for_Subdomain_Takeover)
+- [OWASP WSTG - Subdomain Takeover](https://owasp.org/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/10-Test_for_Subdomain_Takeover)
 - [can-i-take-over-xyz](https://github.com/EdOverflow/can-i-take-over-xyz)
-- [HackTricks — Subdomain Takeover](https://book.hacktricks.xyz/pentesting-web/domain-subdomain-takeover)
+- [HackTricks - Subdomain Takeover](https://book.hacktricks.xyz/pentesting-web/domain-subdomain-takeover)
 
 ---
 
 ## ⚖️ License
 
-[MIT License](LICENSE) — free to use, modify, and distribute.
+[MIT License](LICENSE) - free to use, modify, and distribute.
 
 ---
 
