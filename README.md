@@ -118,25 +118,11 @@ Phase 5 ──► Takeover Analysis      CNAME/NS/MX dangling with 30+ service f
 
 ---
 
-## ⌨️ Keyboard Shortcuts
-
-| Shortcut | Action |
-|----------|--------|
-| `Ctrl+S` | Start scan |
-| `Escape` | Stop scan |
-| `Ctrl+Q` | Quit |
-| `Enter` | Start scan (from domain field) |
-| `Ctrl+C` | Copy selected finding |
-| `Double-Click` | Copy finding to clipboard |
-| `Right-Click` | Context menu |
-
----
-
 ## ⚙️ Installation
 
 ### Step 1 - Clone the repository
 ```bash
-git clone https://github.com/YOUR_USERNAME/subhacker.git
+git clone https://github.com/VijayUba7417/subhacker.git
 cd subhacker
 ```
 
@@ -145,26 +131,7 @@ cd subhacker
 pip3 install -r requirements.txt
 ```
 
-### Step 3 - Install Go tools *(optional - tool works without them)*
-```bash
-go install -v github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest
-go install github.com/tomnomnom/assetfinder@latest
-go install -v github.com/owasp-amass/amass/v4/...@master
-
-# Add Go binaries to PATH
-export PATH=$PATH:~/go/bin
-echo 'export PATH=$PATH:~/go/bin' >> ~/.bashrc
-source ~/.bashrc
-```
-
-### Step 4 - WSL2 display setup *(skip on native Kali Linux desktop)*
-```bash
-export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '{print $2}'):0
-echo 'export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | awk '"'"'{print $2}'"'"'):0' >> ~/.bashrc
-source ~/.bashrc
-```
-
-### Step 5 - Run
+### Step 3 - Run
 ```bash
 python3 subhacker.py
 ```
@@ -229,7 +196,7 @@ urllib3     >= 2.0.0
 tkinter     (included in Python standard library)
 ```
 
-**Optional Go tools** (auto-detected - tool runs without them):
+**Optional Go tools** :
 - [subfinder](https://github.com/projectdiscovery/subfinder)
 - [assetfinder](https://github.com/tomnomnom/assetfinder)
 - [amass](https://github.com/owasp-amass/amass)
