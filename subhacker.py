@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # ─────────────────────────────────────────────────────────────────────────────
-#  SubHacker v1.0  —  Advanced Subdomain Takeover & Attack Surface Scanner
-#  Author  : https://github.com/YOUR_USERNAME/subhacker
+#  SubHacker v1.0 - Advanced Subdomain Takeover & Attack Surface Scanner
+#  Author  : https://github.com/VijayUba7417/subhacker
 #  License : MIT
 #  Usage   : python3 subhacker.py
 # ─────────────────────────────────────────────────────────────────────────────
@@ -45,7 +45,7 @@ BANNER = r"""
  |____/ \__,_|_.__/|_| |_|\__,_|\___|_|\_\___|_|
 
            Advanced Subdomain Takeover Scanner
-                      -- Vijay Uba
+                          - Vijay Uba
 """
 
 UA = "Mozilla/5.0 (X11; Linux x86_64; rv:122.0) Gecko/20100101 Firefox/122.0"
@@ -2060,7 +2060,7 @@ class App:
             "  WAF & tech stack detection\n"
             "  CORS, Security Headers, Cloud Buckets\n"
             "  Zone Transfer, DNS Permutation\n\n"
-            "  github.com/YOUR_USERNAME/subhacker\n\n"
+            "  github.com/VijayUba7417/subhacker\n\n"
             "  For authorized testing only.\n"
         )
         tk.Label(w, text=text, font=("Consolas", 10),
@@ -2077,7 +2077,7 @@ def main():
     # Print banner
     print(BANNER)
     print(f"  {TOOL} v{VERSION}  |  Subdomain Takeover & Attack Surface Scanner")
-    print(f"  github.com/YOUR_USERNAME/subhacker\n")
+    print(f"  github.com/VijayUba7417/subhacker\n")
 
     # WSL2 display check
     if sys.platform.startswith("linux") and not os.environ.get("DISPLAY"):
